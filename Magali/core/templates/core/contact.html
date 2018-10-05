@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block name %}Contacto{% endblock %}
+
+{% load static %}
+
+{% load static %}
+
+{% block background %}{% static 'core/img/29.jpg' %}{% endblock %}
+
+{% block content %}
+<div class="contact section-invert py-4">
+        <h3 class="section-title text-center m-5">Contactame</h3>
+        <div class="container py-4">
+          <div class="row justify-content-md-center px-4">
+            <div class="contact-form col-sm-12 col-md-10 col-lg-7 p-4 mb-4 card">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="contactFormFullName">Nombre</label>
+                      <input required type="text" class="form-control" id="contactFormFullName" placeholder="Nombre completo">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="contactFormEmail">Correo</label>
+                      <input required type="email" class="form-control" id="contactFormEmail" placeholder="Agrega un correo">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Mensaje</label>
+                        <textarea id="exampleInputEmail1" class="form-control mb-4" rows="10" placeholder="Dejame un mensaje..." name="message"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <input class="btn btn-success btn-pill d-flex ml-auto mr-auto" type="submit" value="Enviar Mensaje">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

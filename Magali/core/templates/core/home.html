@@ -1,0 +1,65 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portada{% endblock %}
+
+{% block name %}Bienvenido{% endblock %}
+
+{% load static %}
+
+{% block background %}{% static 'core/img/25.jpg' %}{% endblock %}
+
+
+{% block content %}
+<div class="top-space centrado">
+  <h1>Bienvenidos</h1>
+</div>
+
+<section class="cd-slider">
+<ul>
+<li data-color="#1a1c28">
+<div class="slide-img">
+        <img src="{% static 'core/img/34.jpg' %}" alt="">
+    </div>
+<div class="content">
+<blockquote>
+  <p>Primera reunión de las congresistas integrantes de la Comisión Legal para la Equidad de la Mujer.</p>
+  </blockquote>
+</div>
+</li>
+
+<li data-color="#006666">
+    <div class="slide-img">
+        <img src="{% static 'core/img/28.jpg' %}" alt="">
+    </div>
+<div class="content">
+<blockquote>
+  <p>Participamos en el programa #Audiencias del Canal del Congreso.</p>
+  </blockquote>
+</div>
+</li>
+<li data-color="#002AFF">
+<div class="slide-img">
+        <img src="{% static 'core/img/15.jpg' %}" alt="">
+    </div>
+<div class="content">
+<blockquote>
+  <p>Junto a la Bancada del Partido Conservador Colombiano, nos reunimos con el presidente Ivan Duque.</p>
+  </blockquote>
+</div>
+</li>
+</ul>
+<nav>
+<div><a class="prev" href="#"></a></div>
+<div><a class="next" href="#"></a></div>
+</nav>
+</section>
+
+{% endblock %}
+<!-- <ul>
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/projects">Proyectos</a></li>
+    <li><a href="/about">Acerca</a></li>
+    <li><a href="/contact">Contacto</a></li>
+</ul>
+
+<h1>Mi Web Personal</h1><h2>Ejemplo de lo que sera</h2> -->

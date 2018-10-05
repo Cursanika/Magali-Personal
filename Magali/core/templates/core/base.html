@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" /> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} | Adriana Magaly Matiz Vargas Matiz</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/shards.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/shards-extras.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/slider.css' %}">
+</head>
+<body>
+
+
+  <!-- encabezado y navegacion -->
+
+<div class="site-header centrado">
+
+  <div class="container">
+    <nav>
+      <a href="{% url 'home' %}">Inicio</a>
+      <a href="{% url 'projects' %}">Proyectos</a>
+      <a href="{% url 'about' %}">Acerca</a>
+      <a href="{% url 'contact' %}">Contacto</a>
+    </nav>
+    <div class="menu-icon btn btn-outline-info btn-pill">Menu</div>
+  </div>
+  <h1 class="brand-logo">Magali</h1>
+  <p class="info">{% block name %}{% endblock %}</p>
+</div>
+
+<!-- imagen del header y los titulos -->
+
+
+
+<header style="background-image:url('{% block background %}{% endblock %}');">
+
+</header>
+
+    <div class="navigation">
+      <ul>
+        <li><a href="{% url 'home' %}">Inicio</a>
+        </li>
+        <li><a href="{% url 'projects' %}">Proyectos</a>
+        </li>
+        <li><a href="{% url 'about' %}">Acerca</a>
+        </li>
+        <li><a href="{% url 'contact' %}">Contacto</a></li>
+        <div class="close-nav btn btn-outline-success btn-pill">Cerrar</div>
+      </ul>
+    </div>
+    <main class="white">
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="blue text-center" style="padding:10px;text-align:center;">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'core/js/jquery.js' %}"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script> -->
+    <!-- <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/popper.min.js' %}"></script>
+    <script src="{% static 'core/js/shards.min.js' %}"></script>
+    <script src="{% static 'core/js/app.js' %}"></script>
+</body>
+
+</html>

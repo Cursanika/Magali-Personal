@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Sobre Mi{% endblock %}
+
+{% block name %}Sobre Mi{% endblock %}
+
+{% load static %}
+
+{% block background %}{% static 'core/img/21.jpg' %}{% endblock %}
+
+
+{% block content %}
+
+<section class="acerca-de">
+    <div class="contenedor centrado">
+      <div class="perfil"><img src="{% static 'core/img/5.jpg' %}" alt=""></div>
+        <h2 class="sobre-nosotros black-text">Conóceme</h2>
+        <h3 class="slogan">Congresista</h3>
+        <p class="parrafo">Adriana Magali Matiz Vargas, nació en la ciudad de Ibagué – Tolima, es abogada de profesión de la Universidad Santo Tomás, especialista en derecho administrativo y ciencias constitucionales, especialista en derecho tributario y aduanero y magister en gobierno municipal de la Universidad Externado de Colombia.</p>
+    </div>
+
+</section>
+
+
+{% endblock %}
